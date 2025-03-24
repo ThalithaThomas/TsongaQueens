@@ -96,7 +96,7 @@ const CartComponent = () => {
                 </div>
                 <div className=" font-semibold  mb-5 text-xs">
                   <p className="text-nowrap">
-                    R {item.price * item.quantity}.00
+                    &nsbp; R {item.price * item.quantity}
                   </p>
                 </div>
               </div>
@@ -111,7 +111,8 @@ const CartComponent = () => {
               <div className="flex-col  max-w-[210px] md:max-w-[150px]">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span className="font-semibold">R {subTotal}</span>
+
+                  <span className="font-semibold">R {subTotal.toFixed(2)}</span>
                 </div>
                 <p className="text-xs">
                   Taxes & shipping calculated at checkout
