@@ -3,10 +3,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="bg-gray-100 md:h-[200px] md:px-3 absolute min-w-[1100px] w-[100vw] mt-10 md:mt-28 md:flex justify-between ">
-      <div className="pt-10 list-none">
-        <h1 className="text-md font-sans mb-1">INFO</h1>
-        <ul className="font-sans pointer ">
+    <div className="bg-gray-100 w-full px-4 py-6 mt-10 md:mt-28 md:flex md:justify-between md:px-6 lg:px-12">
+      <div className="mb-6 md:mb-0">
+        <h1 className="text-md font-sans font-medium mb-3">INFO</h1>
+        <ul className="font-sans space-y-2">
           <li>
             <a href="/about">About Us</a>
           </li>
@@ -17,6 +17,20 @@ const Footer = () => {
             <a href="/contact">Contact Us</a>
           </li>
         </ul>
+      </div>
+      <div className="mt-6 md:hidden">
+        <h1 className="text-md font-sans font-medium mb-3">SUBSCRIBE</h1>
+        <p className="text-sm mb-3 font-sans">Sign up to our mailing list</p>
+        <div className="flex">
+          <input
+            type="email"
+            className="bg-white mr-2 p-2 border border-gray-300 focus:outline-none flex-grow"
+            placeholder="Your Email"
+          />
+          <button className="bg-black text-white px-4 py-2 text-sm hover:bg-gray-800 transition-colors">
+            OK
+          </button>
+        </div>
       </div>
       <div className="pt-10  hidden md:block ">
         <h1>SUBSCRIBE</h1>
@@ -37,7 +51,7 @@ const Footer = () => {
         <p className=" text-xs md:text-md">Copyright © 2025 TSONGA QUEENS</p>
         <ul className="flex md:mt-1  ">
           <li>
-            <a>
+            <a href="https://www.instagram.com/tsonga_queenss?igsh=ZGZsYmkyenoxcXQ2&utm_source=qr">
               <FaSquareInstagram
                 size={20}
                 style={{ color: "black" }}

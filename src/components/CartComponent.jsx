@@ -125,6 +125,11 @@ const CartComponent = () => {
             </div>
           </div>
         )}
+        <div className="flex justify-center w-full">
+          <button className="flex flex-row justify-center items-center mb-8 py-1 text-gray-400 text-sm px-7 hover:text-gray-600">
+            <a href="/products">/ Continue Shopping</a>
+          </button>
+        </div>
       </div>
     </div>
   );
